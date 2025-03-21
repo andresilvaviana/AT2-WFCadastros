@@ -40,6 +40,8 @@
             groupBox1 = new GroupBox();
             rdbInativo = new RadioButton();
             rdbAtivo = new RadioButton();
+            label1 = new Label();
+            dtpDataCadastro = new DateTimePicker();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -66,6 +68,7 @@
             txtCodigo.BorderStyle = BorderStyle.FixedSingle;
             txtCodigo.Location = new Point(20, 33);
             txtCodigo.Name = "txtCodigo";
+            txtCodigo.ReadOnly = true;
             txtCodigo.Size = new Size(136, 23);
             txtCodigo.TabIndex = 1;
             // 
@@ -80,7 +83,7 @@
             // lblDescricao
             // 
             lblDescricao.AutoSize = true;
-            lblDescricao.Location = new Point(20, 127);
+            lblDescricao.Location = new Point(20, 131);
             lblDescricao.Name = "lblDescricao";
             lblDescricao.Size = new Size(58, 15);
             lblDescricao.TabIndex = 5;
@@ -88,9 +91,9 @@
             // 
             // btnSalvar
             // 
-            btnSalvar.Location = new Point(222, 267);
+            btnSalvar.Location = new Point(222, 265);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(75, 35);
+            btnSalvar.Size = new Size(75, 41);
             btnSalvar.TabIndex = 6;
             btnSalvar.Text = "Salvar";
             btnSalvar.UseVisualStyleBackColor = true;
@@ -98,9 +101,9 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(141, 267);
+            btnCancelar.Location = new Point(141, 265);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(75, 35);
+            btnCancelar.Size = new Size(75, 41);
             btnCancelar.TabIndex = 7;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -109,7 +112,7 @@
             // txtDescricao
             // 
             txtDescricao.BorderStyle = BorderStyle.FixedSingle;
-            txtDescricao.Location = new Point(20, 145);
+            txtDescricao.Location = new Point(20, 149);
             txtDescricao.Multiline = true;
             txtDescricao.Name = "txtDescricao";
             txtDescricao.Size = new Size(277, 101);
@@ -146,12 +149,31 @@
             rdbAtivo.Text = "Ativo";
             rdbAtivo.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(20, 265);
+            label1.Name = "label1";
+            label1.Size = new Size(98, 15);
+            label1.TabIndex = 12;
+            label1.Text = "Data do Cadastro";
+            // 
+            // dtpDataCadastro
+            // 
+            dtpDataCadastro.Format = DateTimePickerFormat.Short;
+            dtpDataCadastro.Location = new Point(20, 283);
+            dtpDataCadastro.Name = "dtpDataCadastro";
+            dtpDataCadastro.Size = new Size(110, 23);
+            dtpDataCadastro.TabIndex = 13;
+            // 
             // FormCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(112, 134, 147);
-            ClientSize = new Size(330, 314);
+            ClientSize = new Size(330, 333);
+            Controls.Add(dtpDataCadastro);
+            Controls.Add(label1);
             Controls.Add(groupBox1);
             Controls.Add(txtDescricao);
             Controls.Add(btnCancelar);
@@ -188,5 +210,7 @@
         private GroupBox groupBox1;
         private RadioButton rdbInativo;
         private RadioButton rdbAtivo;
+        private Label label1;
+        private DateTimePicker dtpDataCadastro;
     }
 }

@@ -78,6 +78,7 @@ namespace AT2_WFCadastros
             novoC.Nome = txtNomeCategoria.Text;
             novoC.Descricao = txtDescricao.Text;
             novoC.ETipoStatus = eTipoStatus;
+            novoC.DtCadastro = dtpDataCadastro.Value;
 
             CadastroCategoria.ListaCategoria.Add(novoC);
 

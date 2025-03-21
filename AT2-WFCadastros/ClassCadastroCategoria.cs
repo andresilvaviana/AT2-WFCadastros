@@ -14,12 +14,13 @@ namespace AT2_WFCadastros
 
     public class CadastroCategoria
     {
-        public CadastroCategoria(int codigo, string? nome, string? descricao, ETipoStatus eTipoStatus)
+        public CadastroCategoria(int codigo, string? nome, string? descricao, ETipoStatus eTipoStatus, DateTime? dtCadastro = null)
         {
             Codigo = codigo;
             Nome = nome;
             Descricao = descricao;
             ETipoStatus = eTipoStatus;
+            DtCadastro = dtCadastro ?? DateTime.Now;
         }
 
         public CadastroCategoria() { }
@@ -30,6 +31,7 @@ namespace AT2_WFCadastros
         public string? Nome { get; set; }
         public string? Descricao { get; set; }
         public ETipoStatus ETipoStatus { get; set; }
+        public DateTime DtCadastro { get; set; }
 
         public static List<CadastroCategoria> ObterLista()
         {
