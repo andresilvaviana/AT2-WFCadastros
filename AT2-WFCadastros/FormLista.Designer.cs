@@ -39,7 +39,7 @@
             dgvListaCategoria.Dock = DockStyle.Fill;
             dgvListaCategoria.Location = new Point(0, 0);
             dgvListaCategoria.Name = "dgvListaCategoria";
-            dgvListaCategoria.Size = new Size(317, 215);
+            dgvListaCategoria.Size = new Size(571, 215);
             dgvListaCategoria.TabIndex = 0;
             // 
             // FormLista
@@ -47,7 +47,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(112, 134, 147);
-            ClientSize = new Size(317, 215);
+            ClientSize = new Size(571, 215);
             Controls.Add(dgvListaCategoria);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
